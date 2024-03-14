@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Coffee Cultivation Guide</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/coffee.jpg') }}" alt="Coffee plantation">
+        <div class="info">
+            <h2>Ideal Conditions for Successful Coffee Cultivation</h2>
+            <p>Coffee plants thrive in specific environmental conditions that contribute to the quality of the beans. Here are key factors for successful coffee cultivation:</p>
+            <ul>
+                <li><strong>Altitude:</strong> Optimal altitude ranges between 2,000 to 6,000 feet (600 to 1,800 meters) for Arabica coffee.</li>
+                <li><strong>Temperature:</strong> Coffee plants prefer temperatures between 60°F to 70°F (15°C to 24°C).</li>
+                <li><strong>Rainfall:</strong> Well-distributed rainfall of about 60 to 100 inches (150 to 250 cm) annually.</li>
+                <li><strong>Soil:</strong> Well-draining, fertile soil with a slightly acidic to neutral pH.</li>
+                <li><strong>Shade:</strong> Some shade is beneficial, especially when coffee plants are young.</li>
+            </ul>
+            <p>Understanding and maintaining these conditions are essential for cultivating high-quality coffee beans with distinct flavors.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

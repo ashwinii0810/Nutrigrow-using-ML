@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Coconut Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/coconut.jpeg') }}" alt="Coconut tree">
+        <div class="info">
+            <h2>Ideal Growing Conditions for Coconut Trees</h2>
+            <p>Coconut trees thrive in tropical and subtropical regions with warm temperatures and high humidity. They require well-draining soil and regular watering.</p>
+            <p>Key growing conditions for coconut cultivation include warm climate, ample sunlight, and moist soil. Coconut trees are commonly found in coastal areas.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

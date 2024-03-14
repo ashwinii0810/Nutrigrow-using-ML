@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Banana Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/banana.jpeg') }}" alt="banana plantation">
+        <div class="info">
+            <h2>Weather Conditions Suitable for Banana Plants</h2>
+            <p>Banana plants thrive in warm tropical climates with consistent temperatures. They require plenty of sunlight and well-drained soil. Bananas are sensitive to frost and high winds.</p>
+            <p>Key weather conditions for banana cultivation include warm temperatures, high humidity, and protection from extreme weather elements.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

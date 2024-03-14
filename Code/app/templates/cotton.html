@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Cotton Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/cotton.jpg') }}" alt="Cotton field">
+        <div class="info">
+            <h2>Ideal Growing Conditions for Cotton Plants</h2>
+            <p>Cotton plants thrive in warm and temperate climates with specific environmental requirements. Here are key growing conditions for successful cotton cultivation:</p>
+            <ul>
+                <li><strong>Temperature:</strong> Cotton plants prefer temperatures between 60°F to 95°F (15°C to 35°C).</li>
+                <li><strong>Sunlight:</strong> Full sun exposure is essential for optimal cotton growth and yield.</li>
+                <li><strong>Rainfall:</strong> Cotton requires well-distributed rainfall or irrigation during the growing season.</li>
+                <li><strong>Soil:</strong> Well-draining soil with good fertility is crucial. Cotton plants prefer loamy soils.</li>
+            </ul>
+            <p>Understanding and maintaining these conditions are essential for cultivating healthy cotton crops and ensuring a successful harvest.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

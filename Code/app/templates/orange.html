@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Orange Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/orange.jpeg') }}" alt="Orange grove">
+        <div class="info">
+            <h2>Ideal Growing Conditions for Orange Trees</h2>
+            <p>Orange trees flourish in warm climates with specific requirements for optimal growth and fruit production.</p>
+            <ul>
+                <li><strong>Temperature:</strong> Orange trees prefer temperatures between 55°F to 85°F (13°C to 29°C).</li>
+                <li><strong>Sunlight:</strong> Full sun exposure is essential for healthy citrus tree development.</li>
+                <li><strong>Watering:</strong> Well-drained soil and consistent watering are crucial for orange tree health.</li>
+                <li><strong>Soil:</strong> Sandy loam or well-draining soil with a slightly acidic to neutral pH is ideal for orange cultivation.</li>
+            </ul>
+            <p>Understanding and maintaining these conditions are essential for cultivating thriving orange groves and achieving a bountiful harvest of delicious citrus fruits.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

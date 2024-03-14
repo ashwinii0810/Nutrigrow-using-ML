@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Papaya Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/papaya.jpg') }}" alt="Papaya orchard">
+        <div class="info">
+            <h2>Ideal Growing Conditions for Papaya Trees</h2>
+            <p>Papaya trees thrive in tropical climates and require specific conditions for optimal growth and fruit production.</p>
+            <ul>
+                <li><strong>Temperature:</strong> Papaya trees prefer temperatures between 70°F to 90°F (21°C to 32°C).</li>
+                <li><strong>Sunlight:</strong> Full sun exposure is essential for healthy papaya tree development.</li>
+                <li><strong>Watering:</strong> Well-drained soil and regular watering are crucial for papaya tree health.</li>
+                <li><strong>Soil:</strong> Sandy loam or well-draining soil with a slightly acidic to neutral pH is ideal for papaya cultivation.</li>
+            </ul>
+            <p>Understanding and maintaining these conditions are essential for cultivating thriving papaya orchards and achieving a fruitful harvest of this tropical fruit.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

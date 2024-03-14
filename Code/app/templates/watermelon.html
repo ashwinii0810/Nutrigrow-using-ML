@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Watermelon Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/watermelon.jpg') }}" alt="Watermelon patch">
+        <div class="info">
+            <h2>Ideal Growing Conditions for Watermelon Plants</h2>
+            <p>Watermelon plants thrive in warm climates and require specific conditions for optimal growth and fruit production.</p>
+            <ul>
+                <li><strong>Temperature:</strong> Watermelon plants prefer temperatures between 70°F to 90°F (21°C to 32°C).</li>
+                <li><strong>Sunlight:</strong> Full sun exposure is essential for healthy watermelon vine development.</li>
+                <li><strong>Watering:</strong> Consistent and ample watering is crucial for watermelon plant health.</li>
+                <li><strong>Soil:</strong> Well-draining soil with good fertility is ideal for watermelon cultivation.</li>
+            </ul>
+            <p>Understanding and maintaining these conditions are essential for cultivating thriving watermelon patches and achieving a sweet and juicy harvest.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

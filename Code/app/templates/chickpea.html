@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Chickpea Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/chickpea.jpeg') }}" alt="Chickpea field">
+        <div class="info">
+            <h2>Weather Conditions Suitable for Chickpea Cultivation</h2>
+            <p>Chickpea plants thrive in warm and moderate climates. They require well-drained soil and regular watering, but they are relatively drought-tolerant.</p>
+            <p>Key weather conditions for Chickpea cultivation include warm temperatures, moderate sunlight, and consistent moisture without waterlogging.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

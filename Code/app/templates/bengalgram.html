@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>Bengal Gram Information</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="goBack()">Back</button>
+    </div>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/bengal.jpeg') }}" alt="Bengal Gram field">
+        <div class="info">
+            <h2>Weather Conditions Suitable for Bengal Gram Cultivation</h2>
+            <p>Bengal Gram, also known as Chickpea, thrives in warm and dry climates. It requires well-drained soil and moderate watering. Chickpea plants are sensitive to excessive moisture.</p>
+            <p>Key weather conditions for Bengal Gram cultivation include warm temperatures, moderate sunlight, and dry weather.</p>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
